@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="10K549" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="jf1-Ci-gwX">
+    <dependencies>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <viewController id="2" customClass="journalViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hrl-Mk-jRH"/>
+                    <connections>
+                        <segue destination="ebG-Kh-8bh" kind="push" identifier="Show Journal" id="YRt-LB-S4S"/>
+                        <segue destination="vEx-Bx-0MO" kind="push" identifier="Show Life" id="1O8-Ws-OLP"/>
+                        <segue destination="Qme-0H-eRT" kind="push" identifier="Show SignUp" id="jVl-97-hTk"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="392" y="120"/>
+        </scene>
+        <scene sceneID="EH5-cP-g3Z">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ltp-N9-W2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Qme-0H-eRT" customClass="SignUpViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lPv-Cd-nb7">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Udq-XH-kAn"/>
+                    <connections>
+                        <segue destination="ebG-Kh-8bh" kind="push" identifier="Show Journal" id="Qzk-cD-fHW"/>
+                        <segue destination="vEx-Bx-0MO" kind="push" identifier="Show Life" id="VPP-XX-uSv"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="951" y="-355"/>
+        </scene>
+        <scene sceneID="wET-ht-1gW">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vf9-5h-gbj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="ebG-Kh-8bh" customClass="LifeOptionsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lck-oe-4TV">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9fn-Aq-M92">
+                                <rect key="frame" x="98" y="26" width="110" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Take Photo">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="capturePhoto:" destination="ebG-Kh-8bh" eventType="touchUpInside" id="QNM-zO-uqC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aMW-cg-eT1">
+                                <rect key="frame" x="93" y="119" width="120" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Capture Note">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rFe-Lv-Als" kind="push" identifier="Capture Note" id="VrA-Ec-Fur"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Uiw-nt-61U">
+                                <rect key="frame" x="93" y="75" width="121" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Record Video">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordVideo:" destination="ebG-Kh-8bh" eventType="touchUpInside" id="GZe-yI-nPZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="z3m-Wd-mol">
+                                <rect key="frame" x="79" y="164" width="149" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Capture Location">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wjk-yF-7yR" kind="push" identifier="Capture Location" id="Us7-Af-dgt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YHC-ty-8Pj">
+                                <rect key="frame" x="108" y="296" width="90" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="View Life">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vEx-Bx-0MO" kind="push" identifier="Show Life" id="X4p-A1-Dmh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Life Options" id="wZd-mv-kCx"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1489" y="240"/>
+        </scene>
+        <scene sceneID="zji-Ki-jJS">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2PZ-H8-LSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="vEx-Bx-0MO" customClass="LifeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1au-J5-6rK">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Heh-uP-2pk"/>
+                    <connections>
+                        <segue destination="wjk-yF-7yR" kind="push" identifier="Show Location" id="C3a-ot-zCj"/>
+                        <segue destination="rFe-Lv-Als" kind="push" identifier="Show Note" id="zzd-vT-bjj"/>
+                        <segue destination="88u-qv-A3u" kind="push" identifier="Show Entries" id="Xbz-z3-rMu"/>
+                        <segue destination="j6u-cz-3eM" kind="push" identifier="Show Edit Entry" id="cxa-QW-aCT"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2139" y="561"/>
+        </scene>
+        <scene sceneID="A8Q-Yg-Vyl">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qO2-M9-Txr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="j6u-cz-3eM" customClass="EditEntryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kYD-Ut-Ah0">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OFM-Mg-jRx"/>
+                    <connections>
+                        <segue destination="vEx-Bx-0MO" kind="push" identifier="Show Life" id="r3p-38-ybm"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1809" y="1171"/>
+        </scene>
+        <scene sceneID="iaw-jG-oXe">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hw5-2M-sRp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="88u-qv-A3u" customClass="EntriesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0IM-Kn-YT2">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VLE-lb-0Za"/>
+                    <connections>
+                        <segue destination="j6u-cz-3eM" kind="push" identifier="Show Edit Entry" id="lqH-gU-g4F"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2542" y="900"/>
+        </scene>
+        <scene sceneID="VUW-Jv-ZDv">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGw-UL-xxd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="rFe-Lv-Als" customClass="CaptureNoteViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dX2-Lx-BOc">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Capture a note to yourself here!" borderStyle="roundedRect" minimumFontSize="17" id="Q5f-we-0Ys">
+                                <rect key="frame" x="34" y="119" width="219" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MbV-gK-lwv">
+                                <rect key="frame" x="114" y="176" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="DONE">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="captureNote:" destination="rFe-Lv-Als" eventType="touchUpInside" id="pwQ-Xl-uip"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7pp-nE-NFa"/>
+                    <connections>
+                        <outlet property="note" destination="Q5f-we-0Ys" id="BOC-UM-Ca7"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2908" y="468"/>
+        </scene>
+        <scene sceneID="6SU-Eo-7SY">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ppp-Dg-QbX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="wjk-yF-7yR" customClass="PrintMyLocationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fPH-65-iH2">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nBI-DK-ohZ">
+                                <rect key="frame" x="92" y="111" width="149" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Capture Location">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveLocation:" destination="wjk-yF-7yR" eventType="touchUpInside" id="D0s-Ea-WNd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="E3W-ec-URs"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2536" y="281"/>
+        </scene>
+        <scene sceneID="2tP-cr-UzO">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fhz-zJ-hlp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="jf1-Ci-gwX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="uew-dI-yni">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="wNg-bG-rjv"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-136" y="120"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="CaptureNoteViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CaptureNoteViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="note" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="EditEntryViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditEntryViewController.h"/>
+        </class>
+        <class className="EntriesViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EntriesViewController.h"/>
+        </class>
+        <class className="LifeOptionsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LifeOptionsViewController.h"/>
+        </class>
+        <class className="LifeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LifeViewController.h"/>
+        </class>
+        <class className="PrintMyLocationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PrintMyLocationViewController.h"/>
+        </class>
+        <class className="SignUpViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SignUpViewController.h"/>
+        </class>
+        <class className="journalViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/journalViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="loginEmail" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="loginPassword" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="1O8-Ws-OLP"/>
+        <segue reference="YRt-LB-S4S"/>
+        <segue reference="lqH-gU-g4F"/>
+        <segue reference="VrA-Ec-Fur"/>
+        <segue reference="Us7-Af-dgt"/>
+    </inferredMetricsTieBreakers>
+</document>
